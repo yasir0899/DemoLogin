@@ -161,7 +161,6 @@ class MainActivity : AppCompatActivity(), OnConnectionFailedListener {
     }
 
     private fun updateUI(account: GoogleSignInAccount?) {
-
         Log.e(TAG, "Update UI Func=${account?.idToken}")
        if (account!=null){
         startActivity(Intent(this, HomeActivity::class.java))
